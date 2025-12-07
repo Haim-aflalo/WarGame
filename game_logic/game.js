@@ -26,10 +26,12 @@ export function playRound(p1, p2) {
   if (result == 'p1') {
     p1.won_pile.push(p1Card);
     p1.won_pile.push(p2Card);
+    console.log('p1:', p1, 'p1card', p1Card);
+    console.log('p2:', p2, 'p2card', p2Card);
   } else if (result == 'p2') {
     p2.won_pile.push(p2Card);
     p2.won_pile.push(p1Card);
+    console.log('p1:', p1, 'p1card', p1Card);
+    console.log('p2:', p2, 'p2card', p2Card);
   } else return;
-  console.log('p1:', p1, 'p1card', p1Card);
-  console.log('p2:', p2, 'p2card', p2Card);
 }
