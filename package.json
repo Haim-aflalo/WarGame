@@ -1,0 +1,21 @@
+{
+  "name": "wargame",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000W\u0000a\u0000r\u0000G\u0000a\u0000m\u0000e\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haim-aflalo/WarGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Haim-aflalo/WarGame/issues"
+  },
+  "homepage": "https://github.com/Haim-aflalo/WarGame#readme"
+}
