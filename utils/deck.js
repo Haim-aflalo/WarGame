@@ -9,13 +9,13 @@ function createCard(rank, suite) {
   return { rank: rank, suite: suite, value: value };
 }
 
-function compareCards(p1Cards, p2Cards) {
-  if (p1Cards['value'] > p2Cards['value']) return 'p1';
-  if (p1Cards['value'] < p2Cards['value']) return 'p2';
+export function compareCards(p1Cards, p2Cards) {
+  if (p1Cards.value > p2Cards.value) return 'p1';
+  if (p1Cards.value < p2Cards.value) return 'p2';
   else return 'WAR';
 }
 
-function createDeck() {
+export function createDeck() {
   let deck = [];
   const suites = ['H', 'S', 'D', 'C'];
   for (let suite of suites) {
@@ -34,7 +34,7 @@ function createDeck() {
   return deck;
 }
 
-function shuffleDeck(deck) {
+export function shuffleDeck(deck) {
   let round = 999;
   while (round > 0) {
     let index1 = Math.floor(Math.random() * 52);
@@ -47,6 +47,3 @@ function shuffleDeck(deck) {
   }
   return deck;
 }
-
-deck = createDeck();
-console.log(shuffleDeck(deck));
